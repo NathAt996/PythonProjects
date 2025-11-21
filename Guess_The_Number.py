@@ -13,8 +13,10 @@ try:
 
     if guess == computer_choice:
         print("You win! 🎉")
+    elif guess < computer_choice:
+        print(f"Too low! 😢 The correct number was {computer_choice}.")
     else:
-        print(f"You lose! 😢 The correct number was {computer_choice}.")
+        print(f"Too high! 😢 The correct number was {computer_choice}.")
 
 except ValueError:
     print("Invalid input. Please enter a valid number.")
